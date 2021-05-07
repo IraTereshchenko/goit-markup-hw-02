@@ -1,28 +1,26 @@
 :root {
   --main-font: 'Rodoto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
-  background-color: #e5e5e5;
-  color: #212121;
+  --background-color: #e5e5e5;
+  --background-secondary-color: #f5f4fa;
+  --main-color: #212121;
+  --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --primary-white: #ffffff;
+  --accent-white: rgba(255, 255, 255, 0.6);
+  --background-footer-hero: #2f303a;
+  --logo-secondary-color: ##000000;
+  --background-project-color :#EEEEEE
 }
 
 body {
-  background-color: #e5e5e5;
-  color: #212121;
-  font-family: 'roboto', sans-serif;
+  var(--bacbackground-color); 
+  var(----main-color);
+  var(--main-font:)
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-/* основной цвет 212121 */
-/* вторичний цвет теста 757575 */
-/* белий FFFFFF */
-/* акцент белого color: rgba(255, 255, 255, 0.6); */
-/* акценти 2196F3 */
-/* вторичний фон F5F4FA */
-/* фон E5E5E5  */
-/* футер і герой фон 2F303A */
-/* хедер фон FFFFFF */
 
 /* ============= COMPONENTS ============= */
 .list {
@@ -33,21 +31,21 @@ body {
 
 /*========== Header ========== */
 .header {
-  background-color: #ffffff;
+  background-color: var(--primary-white);
 }
 
 .logo-link {
-  font-family: Raleway;
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #000000;
+  color: var(--logo-secondary-color);
   text-decoration: none;
 }
 
 .logo-first-link {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .menu-link {
@@ -56,13 +54,15 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: #212121;
+  color: var(--main-color);
 }
 .menu-link:hover,
 .menu-link:focus {
-  color: #2196f3;
+  color:  var(--accent-color);
 }
-
+.menu-link.current {
+  color: var(--accent-color);
+}
 .contact-item .link,
 .contact-item .link {
   font-weight: 500;
@@ -70,19 +70,20 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .link:hover,
 .link:focus {
-  color: #2196f3;
+  color:  var(--accent-color);
 }
 
 /*========== End Header ========== */
 
 /*========== Hero ========== */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-footer-hero);
+  ;
 }
 .main-title {
   font-weight: 900;
@@ -91,7 +92,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var( --primary-white);
 }
 .modal-btn {
   font-weight: 700;
@@ -101,8 +102,8 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var( --primary-white);
+  background-color:  var(--accent-color);
 }
 .modal-btn:hover,
 .modal-btn:focus 
@@ -118,7 +119,7 @@ body {
 }
 .about-description {
   font-size: 14px;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 /*========== End about ========== */
 
@@ -133,7 +134,8 @@ body {
 
 /*========== Team ========== */
 .team {
-  color: ##f5f4fa;
+  color: var(--main-color);
+  background-color: var(--background-secondary-color);
 }
 .team-title {
   font-weight: 700;
@@ -149,29 +151,42 @@ body {
 .team-text {
   font-size: 16px;
   line-height: 1.19;
-  background-color: #757575;
+  color: var(--secondary-text-color);
 }
 
 /*========== End team========== */
 /*========== Footer========== */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-footer-hero);
 }
 
 .map-link {
   font-style: normal;
   font-size: 14px;
   text-decoration: none;
-  color: #ffffff;
-  font-style: normal;
+  color: var(--primary-white);
 }
+
 .mail-link,
 .tel-link {
   font-style: normal;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--accent-white);
   text-decoration: none;
 }
+.map-link:hover,
+.map-link:focus{
+  color:  var(--accent-color);
+}
+.mail-link:hover,
+.mail-link:focus {
+  color:  var(--accent-color);
+}
+.tel-link:hover,
+.tel-link:focus {
+  color:  var(--accent-color);
+}
+
 /*========== End footer========== */
 
 /*========== Portfolio========== */
@@ -183,17 +198,18 @@ body {
   line-height: 1.62;
   display: flex;
   text-align: center;
-  background-color: #f5f4fa;
+  background-color: var(--background-secondary-color);
+  cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
-  color: #ffffff;
+  color: var( --primary-white);
   background-color: var(--accent-color);
 }
 /*==========End filter==========*/
 /*==========Filter==========*/
 .project-item {
-  background-color: #eeeeee;
+  background-color: var(--background-project-color);
 }
 .project-title {
   font-weight: 700;
@@ -202,10 +218,10 @@ body {
   letter-spacing: 0.06em;
 }
 .project-text {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 /*==========End filter==========*/
 /*========== End portfolio========== */
