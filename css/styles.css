@@ -1,0 +1,211 @@
+:root {
+  --main-font: 'Rodoto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  background-color: #e5e5e5;
+  color: #212121;
+  --accent-color: #2196f3;
+}
+
+body {
+  background-color: #e5e5e5;
+  color: #212121;
+  font-family: 'roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* основной цвет 212121 */
+/* вторичний цвет теста 757575 */
+/* белий FFFFFF */
+/* акцент белого color: rgba(255, 255, 255, 0.6); */
+/* акценти 2196F3 */
+/* вторичний фон F5F4FA */
+/* фон E5E5E5  */
+/* футер і герой фон 2F303A */
+/* хедер фон FFFFFF */
+
+/* ============= COMPONENTS ============= */
+.list {
+  list-style: none;
+}
+
+/*========== END COMPONENTS ============= */
+
+/*========== Header ========== */
+.header {
+  background-color: #ffffff;
+}
+
+.logo-link {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo-first-link {
+  color: #2196f3;
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #2196f3;
+}
+
+.contact-item .link,
+.contact-item .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+}
+
+.link:hover,
+.link:focus {
+  color: #2196f3;
+}
+
+/*========== End Header ========== */
+
+/*========== Hero ========== */
+.hero {
+  background-color: #2f303a;
+}
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.modal-btn:hover,
+.modal-btn:focus 
+
+/*========== End Hero ========== */ 
+/*========== About ========== */
+.about-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.about-description {
+  font-size: 14px;
+  color: #757575;
+}
+/*========== End about ========== */
+
+/*========== Work ========== */
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/*========== End Work ========== */
+
+/*========== Team ========== */
+.team {
+  color: ##f5f4fa;
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.team-item .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  background-color: #757575;
+}
+
+/*========== End team========== */
+/*========== Footer========== */
+.footer {
+  background-color: #2f303a;
+}
+
+.map-link {
+  font-style: normal;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  font-style: normal;
+}
+.mail-link,
+.tel-link {
+  font-style: normal;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+/*========== End footer========== */
+
+/*========== Portfolio========== */
+
+/*==========Filter==========*/
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  display: flex;
+  text-align: center;
+  background-color: #f5f4fa;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+/*==========End filter==========*/
+/*==========Filter==========*/
+.project-item {
+  background-color: #eeeeee;
+}
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
+}
+/*==========End filter==========*/
+/*========== End portfolio========== */
