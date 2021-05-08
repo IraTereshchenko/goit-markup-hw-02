@@ -1,8 +1,7 @@
 :root {
-  --main-font: 'Rodoto', sans-serif;
+  --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
-  --background-color: #e5e5e5;
-  --background-secondary-color: #f5f4fa;
+  --background-color: #f5f4fa;
   --main-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
@@ -16,7 +15,6 @@
 
 body {
   color: var(--main-color);
-  background-color: var(--background-color);
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
@@ -147,7 +145,7 @@ body {
 /*========== Team ========== */
 .team {
   color: var(--main-color);
-  background-color: var(--background-secondary-color);
+  background-color: var(--background-color);
 }
 .team-title {
   font-weight: 700;
@@ -214,7 +212,7 @@ body {
   line-height: 1.62;
   display: flex;
   text-align: center;
-  background-color: var(--background-secondary-color);
+  background-color: var(--background-color);
   cursor: pointer;
 }
 .filter-btn:hover,
