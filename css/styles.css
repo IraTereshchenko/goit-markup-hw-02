@@ -6,17 +6,19 @@
   --main-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --btn-main-color: #188ce8;
   --primary-white: #ffffff;
   --accent-white: rgba(255, 255, 255, 0.6);
   --background-footer-hero: #2f303a;
   --logo-secondary-color: ##000000;
-  --background-project-color :#EEEEEE
+  --background-project-color: #eeeeee;
 }
 
 body {
-  var(--bacbackground-color); 
-  var(----main-color);
-  var(--main-font:)
+  color: var(--main-color);
+  background-color: var(--background-color);
+  font-family: var(--main-font);
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -58,7 +60,7 @@ body {
 }
 .menu-link:hover,
 .menu-link:focus {
-  color:  var(--accent-color);
+  color: var(--accent-color);
 }
 .menu-link.current {
   color: var(--accent-color);
@@ -75,7 +77,7 @@ body {
 
 .link:hover,
 .link:focus {
-  color:  var(--accent-color);
+  color: var(--accent-color);
 }
 
 /*========== End Header ========== */
@@ -83,7 +85,6 @@ body {
 /*========== Hero ========== */
 .hero {
   background-color: var(--background-footer-hero);
-  ;
 }
 .main-title {
   font-weight: 900;
@@ -92,7 +93,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var( --primary-white);
+  color: var(--primary-white);
 }
 .modal-btn {
   font-weight: 700;
@@ -102,14 +103,25 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var( --primary-white);
-  background-color:  var(--accent-color);
+  color: var(--primary-white);
+  background-color: var(--accent-color);
 }
 .modal-btn:hover,
-.modal-btn:focus 
+.modal-btn:focus {
+  color: var(--primary-white);
+  background-color: var(--btn-main-color);
+}
 
-/*========== End Hero ========== */ 
+/*========== End Hero ========== */
 /*========== About ========== */
+
+.hide-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
 .about-title {
   font-weight: 700;
   font-size: 14px;
@@ -159,6 +171,9 @@ body {
 .footer {
   background-color: var(--background-footer-hero);
 }
+.logo-secondary-link {
+  color: var(--primary-white);
+}
 
 .map-link {
   font-style: normal;
@@ -175,16 +190,16 @@ body {
   text-decoration: none;
 }
 .map-link:hover,
-.map-link:focus{
-  color:  var(--accent-color);
+.map-link:focus {
+  color: var(--accent-color);
 }
 .mail-link:hover,
 .mail-link:focus {
-  color:  var(--accent-color);
+  color: var(--accent-color);
 }
 .tel-link:hover,
 .tel-link:focus {
-  color:  var(--accent-color);
+  color: var(--accent-color);
 }
 
 /*========== End footer========== */
@@ -193,6 +208,7 @@ body {
 
 /*==========Filter==========*/
 .filter-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -203,7 +219,7 @@ body {
 }
 .filter-btn:hover,
 .filter-btn:focus {
-  color: var( --primary-white);
+  color: var(--primary-white);
   background-color: var(--accent-color);
 }
 /*==========End filter==========*/
